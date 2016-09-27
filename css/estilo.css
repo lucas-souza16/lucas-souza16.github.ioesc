@@ -1,0 +1,141 @@
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*fim do clearfix*/
+*{margin:0px;
+padding:0px;
+}
+/* Utilizo essas Tags para centralizar do o conteúdo na página e remover os  espaços entre as DIV  */
+
+body {
+	background-image: url(../img/gestao.jpg); /* cor do background */
+}
+/* Aqui se define a formatação da página toda */
+
+.cabecalho{
+	width:980px;         /* Largura */
+	height:262px;     /* Altura */
+	margin:auto;     /* Margin deixa a div centralizada na página */
+}
+/* Aqui defino o Tamanho do topo do site  Logo Banner e Menu */
+
+.logo{
+	width:410px;
+	height:220px;
+	float:left;     /* Faz com que a DIV se ajuste sempre do lado esquerdo */
+}
+
+/* Float funciona da seguinte forma no caso o "left" ele ajusta os elementos do lado esquerdo, um ao lado do outro, quando não houver espaço suficiente para o elemento ele o joga pra baixo ainda ajustado a esquerda */
+
+.banner { 
+    width:570px;
+	height:220px;
+	float:left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000080;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu {
+	width:980px;
+	height:32px;
+	padding-top:10px; /* cobre um espaço no topo do elemento Obs: o menu tem 42px de altura quando insiro padding de qualquer lado, preciso retirar os Px de padding para manter o tamanho do menu.  Nesse exemplo seria 42px de height , então padding top    10px height = 32                  */
+	
+	background-image:url(../img/bg-menu.jpg); /* Inseri uma imagem de background no elemento */
+	background-repeat:no-repeat; /* Faz com que o Back ground não se repita */
+	background-position: center;
+	float:left;
+}
+.menu a{  /*  Aqui editamos todos os "A" (links ) do menu, então .menu a = dentro de "menu" todos os "A" seguem a formatação */
+
+	text-decoration:none;  /* Tira o sublinhado do link */
+	font-size:16px;
+	padding-left:15px;
+	color:#CCC;
+}
+#menu ul {
+widht:110px;
+background: #000000;
+padding:6px;
+border:3px outset #ffffff;
+margin:0; 
+} 		
+
+/* Termina aqui o cabeçalho --------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* conteúdo ( Meio do site site onde fica a maior parte da informação ) ------------------------------------------------------------------------------------- */
+
+.conteudo { 
+	width:980px;
+	height:408px;
+	background-color:#EEE9E9;
+	color:#000;
+	display: table;
+	margin:auto;
+}
+.conteudo h1{
+	color:#06C;
+	padding-left:15px;
+	padding-top:;
+}
+.conteudo p{
+	padding-left:15px;
+	padding-top:10px;
+	font-size:14px;
+}
+.conteudoSEC { 
+	display: inline;
+ width: 30%;
+ float: right;
+}
+.texto{
+	width:650px;
+	height:auto; /* O height fica com o tamanho indeterminado, ira depender do conteudo que estiver dentro, se tratando de texto é bom utilizar height auto pois os textos podem variar de tamanho */
+	float:left;
+}
+
+.fotos{
+width:330px;
+height:auto;
+float:left;
+	
+}
+/* Termina aqui o conteúdo -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.rodape{
+	width:970px;
+	height:30px;
+	background-image:url(../img/bg-rodape.jpg);
+	background-repeat:no-repeat;
+	padding-top:5px;
+	padding-left:10px;
+	margin:auto;
+	color: #FFFAFA;
+}

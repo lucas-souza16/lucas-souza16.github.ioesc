@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html">
+<html>
+
+<head>
+
+<title>BLOG DA GERÊNCIA DE CONFIGURAÇÃO E MUDANÇAS</title>
+
+<link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Aqui chamamos o arquivo estilo.css da pasta "CSS"   -->
+
+</head>
+
+<body>
+
+
+<div class="cabecalho" >
+                
+                <div class="banner" >
+                 <img src="img/banner.png" width="980" height="220" title="gerências"><!-- Insere a imagem do banner da pasta IMG -->
+                </div><!-- Fim Banner -->
+                  
+                <div class="menu" >
+                <ul>
+                
+                <a href="index.html"title="HOME" > HOME </a> 
+                <div class="dropdown">
+                          <a> ARQUIVOS DO BLOG </a>
+                          <div class="dropdown-content">
+                           <a href="postagem1.html"title="POSTAGEM1" > GIT </a><br>
+                            <a href="postagem2.html"title="POSTAGEM2" > SUBVERSION</a>
+                            <a href="postagem3.html"title="POSTAGEM3" > BUGZILLA </a>
+                            <a href="postagem4.html"title="POSTAGEM4" > MARVEN</a>
+                          </div>
+                        </div>            
+                                   
+                <a href="contatos.html"title="CONTATOS" > CONTATOS </a> <!-- link menu -->
+                </div><!-- Fim menu -->
+                </ul>
+</div><!-- Fim Cabeçalho -->
+
+<div class="conteudo" >
+
+
+                    <div class="texto" >
+                    <h1> <p> quarta-feira, 21 de setembro de 2016</p> </h1> 
+
+                    <center><h1><P><b>Controle de versões </P></b></h1></center>
+                    
+                    <p> 
+					São sistemas que registra as mudanças feitas em um arquivo ou um conjunto de arquivos ao longo do tempo, 
+					de forma que você possa recuperar versões específicas.  
+					</p>
+					 <center><h1><P><b>Sistemas de controle de versões locais </P></b></h1></center>
+                    <p>
+					Um dos métodos preferidos da  maioria das pessoas  quando vão desenvolver um projeto é criar um diretório e  a locar o seu código dentro,  essa prática e dotada por muitos, pois é simples  por outro lado é suscetível a erros. É fácil esquecermos em qual diretório você está e acidentalmente incrementar uma funcionalidade no arquivo errado ou sobrescrever arquivos sem querer. Para lidar com essa problemática, desenvolvedores desenvolveram ferramentas capazes de resolver esse conflitos com sistemas que armazena uma maquina local arquivos que pode ser modificados  sobre controle de versão. O RCS armazena as diferenças entre cada versão de  um arquivo, e permite que seja retornados as versões anteriores.
+					
+					
+					</p>
+
+           <img href=""/><a href="img/01.png" target="_blank"><img alt="" src="img/01.png" width="600" height="300" title="CONTROLE DE VERSÕES" /></a><!-- Insere a foto da pasta IMG -->
+
+                    </div><!-- Fim Texto -->
+                     <div class="conteudoSEC" >
+                     <h1><P><b>COLABORADORES</P></b></h1>
+                    
+                    <p> Everton Lucas </p>
+                    <p> Juvenal Calos </p>
+
+
+                    </div><!-- Fim Lateral -->
+
+                     <div class="conteudoSEC" >
+                              <div class="texto" >
+                                <h1><P><b>BLOCO DE MOTIVAÇÃO </P></b></h1>
+                    <img href=""/><a href="img/lateral.gif" target="_blank"><img alt="" src="img/lateral.gif" width="290" height="300" /></a><!-- Insere a foto da pasta IMG -->
+                    </div>
+                               
+                  <img href=""/><a href="img/pegadas.jpg" target="_blank"><img alt="" src="img/pegadas.jpg" width="290" height="600" /></a><!-- Insere a foto da pasta IMG -->
+
+                    </div><!-- Fim foto -->
+                <div class="texto" >
+                    <center><h1><P><b>Sistemas de Controle de Versão Centralizados</P></b></h1></center>
+                    
+       <p>  
+     Outra situação que os desenvolvedores se depara e quando sua profissão exigem  que haja  trabalho em equipe para utilizar  sistemas diferentes como resolver esses conflitos. Para lidar com isso, foram desenvolvidos Sistemas de Controle de Versão Centralizados (Centralized Version Control System 
+     ou CVCS). Esses sistemas, como por exemplo, o CVS, Subversion e Perforce, possuem um único servidor central que contém todos os arquivos versionados 
+     e vários clientes que podem resgatar (check out) os arquivos do servidor. Por muitos anos, esse foi o modelo padrão para controle de versão.
+     Essa ferramenta oferece uma grande vantagem, especialmente sobre VCSs locais. Por exemplo, todo mundo pode ter conhecimento razoável sobre o que os outros desenvolvedores estão fazendo no projeto. Administradores têm controle específico sobre quem faz o quê; sem falar que é bem mais fácil administrar um CVCS do que lidar com bancos de dados locais em cada cliente. Entretanto, esse arranjo também possui grandes desvantagens. O mais óbvio é que o servidor central é um ponto único de falha. Se o servidor ficar fora do ar por uma hora, ninguém pode trabalhar em conjunto ou salvar novas versões dos arquivos durante esse período. Se o disco do servidor do banco de dados for corrompido e não existir um backup adequado, perdem-se tudo — todo o histórico de mudanças no projeto, exceto pelas únicas cópias que os desenvolvedores possuem em suas máquinas locais. VCSs locais também sofrem desse problema sempre que se tem o histórico em um único local, corre-se o risco de perder tudo.
+
+      </p>
+      <img href=""/><a href="img/02.png" target="_blank"><img alt="" src="img/02.png" width="600" height="300" title="CONTROLE DE VERSÕES" /></a><!-- Insere a foto da pasta IMG -->
+     </div><!-- Fim Texto -->
+
+        <div class="texto">
+        <center> <h1><P><b>Sistemas de Controle de Versão Distribuídos</P></b></h1></center>
+         <p>
+          São sistemas que surgiram para resolver essa problemática dos sistemas centralizados (CVSs). A criação do sistema de controle distribuído permite que o desenvolvedor não só faça copias das ultimas versões dos arquivos  mas de todo o repositório e assim,  se o servidor falhar qualquer um dos repositórios dos desenvolvedores pode ser copiados de volta para o servidor para ser restaurado.  Exemplos desses sistemas ( git,mercurial, Bazaar ou Darcs).
+         </p>
+                    
+         <img href=""/><a href="img/03.png" target="_blank"><img alt="" src="img/03.png" width="600" height="300" title="CONTROLE DE VERSÕES" /></a><!-- Insere a foto da pasta IMG -->
+         
+         </div>
+                    
+
+                    
+                    
+                    
+                    
+</div><!-- Fim conteudo -->
+
+
+
+
+<div class="rodape" 
+
+
+<p>© Copyright desde 2016 blog da gerência, todos os direitos reservados </p>
+</div><!-- Fim rodape -->
+
+
+</body>
+</html>
